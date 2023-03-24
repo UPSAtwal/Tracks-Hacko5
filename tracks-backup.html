@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks - HACKOWASP 5.0</title>
+    <link rel="stylesheet" href="./assets/css/landing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Nav-bar-->
+        <header id="navbar">
+            <ul id="menu">
+                <li><a href="Home">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Tracks">Tracks</a></li>
+                <li><a href="Partners">Partners</a></li>
+                <li><a href="Faq">FAQ</a></li>
+                
+            </ul>
+            <hr class="horizontal-line"></hr>
+
+        </header>
+        <h1>HACKOWASP 5.0</h1>
+
+<script>
+    var html = document.getElementsByTagName("html")[0];
+var sun = document.querySelector(".sun");
+var rainbow = document.querySelector(".rainbow");
+var rabbit = document.querySelector(".rabbit");
+var snow = document.querySelectorAll(".snow");
+var rain = document.querySelectorAll(".rain");
+var flowers = document.querySelectorAll(".flower");
+var lightColours = ["#93d5eb", "#add63a", "#c5d63a", "#febe42"],
+mediumColours = ["#66bbd8", "#92c938", "#acc52b", "#ff9d25"],
+darkColours = ["#4da2bb", "#2a9d5c", "#89a503", "#ff6b2f"],
+backgroundColours = ["#cbe9f4", "#daf8ff", "#feec98", "#ffdc8a"],
+bushColours = ["#ffffff", "#3ebf6d", "#99b31a", "#fd6d2e"],
+cloudColours = ["#ffffff", "#ffffff", "#ffffff", "#eaf9fe"],
+seasons = ["Winter", "Spring", "Summer", "Autumn"];
+var c = 1;
+var season;
+
+function updateSeasons() {
+  html.style.setProperty("--bgd-color", backgroundColours[c]);
+  html.style.setProperty("--light", lightColours[c]);
+  html.style.setProperty("--medium", mediumColours[c]);
+  html.style.setProperty("--dark", darkColours[c]);
+  html.style.setProperty("--bush", bushColours[c]);
+  html.style.setProperty("--cloud", cloudColours[c]);
+  season = seasons[c];
+}
+
+
+let nF = 0;
+function animate() {
+  if (++nF % 600 === 0) {
+    updateSeasons();
+  }
+  requestAnimationFrame(animate);
+}
+animate();
+//navbar
+var navbar =document.getElementById("navbar")
+var menu =document.getElementById("menu")
+window.onscroll =function(){
+  if(window.pageYOffset >= menu.offsetTop){
+    navbar.classList.add('sticky');
+  }
+  else{
+    navbar.classList.remove('sticky');
+  }
+}
+
+
+</script
+</body>
+</html>
