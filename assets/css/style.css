@@ -46,3 +46,21 @@ body {
   .sectionTwo {
     padding: 20px;
   }
+
+  /* Media queries */
+@media only screen and (max-width: 768px) {
+  .navbarContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto;
+  }
+  
+  .navbarContainer li {
+    margin-top: 10px;
+  }
+  
+  .horizontal-line {
+    width: 100%;
+  }
+}
