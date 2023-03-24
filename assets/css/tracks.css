@@ -1,9 +1,15 @@
 * {
     font-family: 'Playfair Display', serif;
+    transition: 4s ease background;
+}
+
+:root {
+    --bgd-color: #cbe9f4;
 }
 
 body {
-    background: #cbe9f4;
+    /* background: #cbe9f4; */
+    background: --bgd-color;
     justify-content: center;
     align-items: center;
     /* display: flex; */
