@@ -214,6 +214,14 @@ h4 {
     }
 }
 
+/* styles to apply if the user's settings are set to reduced motion - AKA do not change bg color*/
+@media (prefers-reduced-motion) {
+    body {
+        background: #cbe9f4;
+    }
+}
+
+
 
 /* Make the cards responsive */
 /* .cards__item {
