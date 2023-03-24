@@ -1,30 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Playfair Display', serif;
 }
 
 body {
-    height: 100vh;
-    overflow: hidden;
     background: #cbe9f4;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p {
-    margin-right: 20px;
-    font-family: 'Playfair Display', serif;
-    opacity: 0.1;
+h1{
     font-size: 40px;
+    font-weight: 400;
 }
+
+h2{
+    font-size: 15px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    color: #727272;
+    /* padding-top: 0%; */
+}
+
+/* p {
+    margin-right: 20px;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+} */
 
 
 .img {
-    background-color: #370eee;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    background-color: #2F3C7E;
+    box-shadow: 0 0 5px #2F3C7E;
     border-radius: 6px;
     height: 60px;
     width: 60px;
@@ -35,10 +41,34 @@ p {
     margin-top: 20px;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* list-style: none; */
+    /* margin: 0; */
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+}
+/* 
+@media (min-width: 40rem) {
+    .cards__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards__item {
+        width: 33.3333%;
+    }
+} */
+
 .container {
-    width: 350px;
-    height: 500px;
-    perspective: 800px;
+    /* width: 350px; */
+    height: 350px;
+    /* perspective: 800px; */
 }
 
 .container:hover>.card {
@@ -48,7 +78,9 @@ p {
 
 .card {
     margin: 10px;
-        border: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 400px;
     position: relative;
@@ -57,18 +89,41 @@ p {
     transform-style: preserve-3d;
 }
 
+.card-header {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #727272;
+    font-family: 'Roboto', serif;
+}
+
 .front,
 .back {
     height: 100%;
     width: 100%;
-    border-radius: 2rem;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
 }
 
-.front {
-    background-image: url(https://source.unsplash.com/random/350x500);
+.front{
+    background-color: #FFFFFF;
 }
 
 .back {
