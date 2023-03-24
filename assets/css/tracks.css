@@ -47,13 +47,18 @@ h4 {
 
 .card {
     /* margin: 10px; */
+    margin-right: 16px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     height: 350px;
     width: 400px;
     position: relative;
-    overflow: hidden;
+    /* overflow: clip; */
     background-color: #FFFFFF;
+}
+
+.card-content {
+    padding: 10px;
 }
 
 .card-header {
@@ -61,8 +66,9 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 40px;
+    height: 100px;
 }
 
 .card-header h1 {
@@ -100,11 +106,114 @@ h4 {
     gap: 2rem;
 }
 
+/* adjust navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbarContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .navbarContainer li {
+        margin: 1rem;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+}
+
+/* adjust headings for smaller screens */
+@media (max-width: 768px) {
+    .headinglp {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* adjust cards for smaller screens */
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+    }
+
+    .card-header {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        font-size: 1.5rem;
+    }
+}
+
+/* adjust font sizes for smaller screens */
+@media (max-width: 500px) {
+    .headinglp {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        font-size: 1rem;
+    }
+}
+
+/* adjust font sizes for even smaller screens */
+@media (max-width: 350px) {
+    .headinglp {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-header {
+        font-size: 1rem;
+    }
+
+    .card-body {
+        font-size: 0.8rem;
+    }
+}
+
+
 /* Make the cards responsive */
-.cards__item {
+/* .cards__item {
     flex-basis: calc(33.33% - 2rem);
     min-width: 250px;
-}
+} */
 
 /* Adjust the size of the card header image */
 /* .card-header .img img {
@@ -117,14 +226,14 @@ h4 {
 } */
 
 /* Make the card body text smaller on small screens */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .card-body p {
         font-size: 0.9rem;
     }
-}
+} */
 
 
-/* UNUSED */ 
+/* UNUSED */
 
 /*
 .front {
