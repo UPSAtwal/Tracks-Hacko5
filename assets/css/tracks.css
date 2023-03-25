@@ -36,13 +36,17 @@
     margin-top: 20px;
 }
 
+/* Center the cards on the screen */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 100vw;
-    height: 1vh;
-}
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    }
 
 .card {
     /* margin: 10px; */
@@ -95,14 +99,7 @@
 }
 
 
-/* Center the cards on the screen */
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
+
 
 
 /* adjust headings for smaller screens */
