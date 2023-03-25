@@ -7,27 +7,18 @@
     --bgd-color: #cbe9f4;
 }
 
-body {
-    /* background: #cbe9f4; */
-    background: --bgd-color;
-    justify-content: center;
-    align-items: center;
-    /* display: flex; */
-}
-
-h1 {
+.headinglarge {
     font-size: 40px;
     font-weight: 400;
 }
 
-h2 {
+.headingsmall {
     font-size: 15px;
-    font-family: 'Playfair Display', sans-serif;
     font-weight: 400;
     color: #727272;
 }
 
-h4 {
+.pinkheading {
     color: #F20487;
     text-shadow: #3a3a3a;
 }
@@ -113,25 +104,6 @@ h4 {
     gap: 2rem;
 }
 
-/* adjust navbar for smaller screens */
-/* @media (max-width: 768px) {
-    .navbarContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .navbarContainer li {
-        margin: 1rem;
-    }
-
-    .horizontal-line {
-        display: none;
-    }
-} */
 
 /* adjust headings for smaller screens */
 @media (max-width: 768px) {
@@ -226,13 +198,32 @@ h4 {
     }
 }
 
-/* styles to apply if the user's settings are set to reduced motion - AKA do not change bg color*/
+/* styles to apply if the user's settings are set to reduced motion - ie. do not change bg color*/
 @media (prefers-reduced-motion) {
     body {
         background: #cbe9f4;
     }
 }
 
+/* adjust navbar for smaller screens */
+/* @media (max-width: 768px) {
+    .navbarContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .navbarContainer li {
+        margin: 1rem;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+} */
 
 
 /* Make the cards responsive */
